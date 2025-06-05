@@ -12,6 +12,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  app:
+  message: "User service running in DEV profile"
     
 eureka:
   instance:
