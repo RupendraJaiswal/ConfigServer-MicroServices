@@ -1,9 +1,23 @@
-spring:
-  application:
-    name: hotel-service
-
 server:
   port: 8082
 
-app:
-  message: "Hotel service running in PROD profile"
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hotelmicroservices
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry:  true
+    register-with-eureka:  true
+    service-url:
+      defaultZone : http://localhost:8761/eureka
