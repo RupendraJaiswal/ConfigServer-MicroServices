@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: user-service
+
+server:
+  port: 8081
+
+app:
+  message: "User service running in PROD profile"

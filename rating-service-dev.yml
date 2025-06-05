@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: rating-service
+
+server:
+  port: 8083
+
+app:
+  message: "Rating service running in DEV profile"

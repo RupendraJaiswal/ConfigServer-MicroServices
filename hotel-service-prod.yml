@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hotel-service
+
+server:
+  port: 8082
+
+app:
+  message: "Hotel service running in PROD profile"
